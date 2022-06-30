@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Oakview Construction Survey Form</h1>
+        <p id="description" class="description text-center">
+          We thank you for taking the time to help us improve
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>How did you come across Oakview Construction? </p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select</option>
+            <option value="friend">Friend</option>
+            <option value="recommendation">Recommendation</option>
+            <option value="social">Social Media</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend Oakview Construction?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes 100%</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="erm"
+              type="radio"
+              class="input-radio"
+            />Erm Possibly</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not"
+              type="radio"
+              class="input-radio"
+            />Not A Chance</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>What was your favourite part of the build?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select</option>
+            <option value="Staff">The Staff</option>
+            <option value="Demolition">Demolition</option>
+            <option value="Materials">Choosing materials</option>
+            <option value="Finishing">Finishing touches</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="Groundworks"
+              type="checkbox"
+              class="input-checkbox"
+            />Groundworks</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="Steel"
+              type="checkbox"
+              class="input-checkbox"
+            />Steel Instalations</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Plumbers"
+              type="checkbox"
+              class="input-checkbox"
+            />Plumbers</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Carpenters"
+              type="checkbox"
+              class="input-checkbox"
+            />Carpenters</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Electricians"
+              type="checkbox"
+              class="input-checkbox"
+            />Electricians</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Tilers"
+              type="checkbox"
+              class="input-checkbox"
+            />Tilers</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Decorators"
+              type="checkbox"
+              class="input-checkbox"
+            />Decorators</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Foreman"
+              type="checkbox"
+              class="input-checkbox"
+            />Foreman</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Labourers"
+              type="checkbox"
+              class="input-checkbox"
+            />Labourers</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Management"
+              type="checkbox"
+              class="input-checkbox"
+            />Management</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Site set-up"
+              type="checkbox"
+              class="input-checkbox"
+            />Site set-up</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>A comment or suggestion would be greatly appreciated.</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
